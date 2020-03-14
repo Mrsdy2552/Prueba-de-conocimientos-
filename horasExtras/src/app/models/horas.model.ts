@@ -1,5 +1,5 @@
  export interface horas_extras{
-   Resetting(arg0: (res: Object) => void, arg1: (err: any) => void, Resetting: any); 
+ 
    Documento:number;
    NOMBRE: string;
    APELLIDO:string
