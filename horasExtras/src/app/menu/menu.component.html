@@ -1,0 +1,19 @@
+<mat-toolbar color="primary">   
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button> 
+      
+      <span  [routerLink]="['']" >Horas Extras</span>
+      <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <button mat-button routerLinkActive="router-link-active" [routerLink]="['Form']">Ingreso De horas</button>
+        <!-- <button mat-button  routerLinkActive="router-link-active"  [routerLink]="['pacientes']">Creacion pacientes</button> -->
+        <button mat-button  routerLinkActive="router-link-active"  [routerLink]="[ 'Listado']" >Listado de Horas</button>
+          </div>
+         
+            <span class="example-spacer"></span>
+  <mat-icon class="example-icon" aria-hidden="false" aria-label="Example user verified icon">reply_all</mat-icon>
+    </mat-toolbar-row>
+  </mat-toolbar>
